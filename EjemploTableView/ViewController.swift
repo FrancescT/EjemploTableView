@@ -44,10 +44,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tablaTareas.reloadData()
     }
     
+    func eliminar(posicion: Int) {
+        listaTareas.remove(at: posicion)
+        tablaTareas.reloadData()
+    }
+    
+    func modificar(posicion: Int, dato: Tarea) {
+        listaTareas[posicion] = dato
+        tablaTareas.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "CREAR" {
             let destino = segue.destination as! CrearTareaViewController
             destino.delegate = self
+        }
+        if segue.identifier == "EDITAR" {
+            let destino = segue.destination as! EditarViewController
+            destino.tarea = listaTareas[tablaTareas.indexPathForSelectedRow!.row]
+            destino.delegate = self
+            destino.posicion = tablaTareas.indexPathForSelectedRow!.row
         }
     }
     

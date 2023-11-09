@@ -65,6 +65,7 @@
                                         <connections>
                                             <outlet property="lbContenido" destination="Ivj-nz-MGN" id="Nyd-2j-edK"/>
                                             <outlet property="lbTitulo" destination="4Df-3d-5Ny" id="K0z-Zy-fmr"/>
+                                            <segue destination="6sK-qv-DaS" kind="show" identifier="EDITAR" id="OLu-59-c9C"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -99,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.599999999999994" y="101.97044334975369"/>
+            <point key="canvasLocation" x="-186" y="-271"/>
         </scene>
         <!--Crear Tarea View Controller-->
         <scene sceneID="DRZ-1k-AdJ">
@@ -159,6 +160,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Va-Y6-nxy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="802.39999999999998" y="101.97044334975369"/>
+        </scene>
+        <!--Editar View Controller-->
+        <scene sceneID="ZyE-L5-EcO">
+            <objects>
+                <viewController id="6sK-qv-DaS" customClass="EditarViewController" customModule="EjemploTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCQ-Bo-H14">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW2-oS-ROM">
+                                <rect key="frame" x="16" y="122" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZvP-FL-c7r">
+                                <rect key="frame" x="16" y="224" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-ox-cdV">
+                                <rect key="frame" x="16" y="365" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ELIMINAR"/>
+                                <connections>
+                                    <action selector="btnEliminar:" destination="6sK-qv-DaS" eventType="touchUpInside" id="2y1-Z1-cPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDp-Gi-yDN">
+                                <rect key="frame" x="208" y="365" width="151" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MODIFICAR"/>
+                                <connections>
+                                    <action selector="btnModificar:" destination="6sK-qv-DaS" eventType="touchUpInside" id="Q9z-GT-VXs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6sp-4l-6nj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HvL-Td-UFE"/>
+                    <connections>
+                        <outlet property="txtContenido" destination="ZvP-FL-c7r" id="MeJ-ri-opM"/>
+                        <outlet property="txtTitulo" destination="lW2-oS-ROM" id="PcH-Gk-aEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wb9-mX-F5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.60000000000002" y="-574.13793103448279"/>
         </scene>
     </scenes>
     <resources>

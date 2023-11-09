@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5B70762AFCCE7A0066B141 /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B70752AFCCE7A0066B141 /* EditarViewController.swift */; };
 		2CEF7CB32AF3A55800645BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF7CB22AF3A55800645BED /* AppDelegate.swift */; };
 		2CEF7CB52AF3A55800645BED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF7CB42AF3A55800645BED /* SceneDelegate.swift */; };
 		2CEF7CB72AF3A55800645BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF7CB62AF3A55800645BED /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C5B70752AFCCE7A0066B141 /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
 		2CEF7CAF2AF3A55800645BED /* EjemploTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjemploTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CEF7CB22AF3A55800645BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CEF7CB42AF3A55800645BED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				2CEF7CEB2AF3A73100645BED /* CrearTareaViewController.swift */,
 				2CEF7CF02AF3A94200645BED /* CeldaTableViewCell.swift */,
 				2CEF7CF52AF3AD0800645BED /* ObtenerTareas.swift */,
+				2C5B70752AFCCE7A0066B141 /* EditarViewController.swift */,
 			);
 			path = EjemploTableView;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				2CEF7CB72AF3A55800645BED /* ViewController.swift in Sources */,
 				2CEF7CB32AF3A55800645BED /* AppDelegate.swift in Sources */,
 				2CEF7CB52AF3A55800645BED /* SceneDelegate.swift in Sources */,
+				2C5B70762AFCCE7A0066B141 /* EditarViewController.swift in Sources */,
 				2CEF7CE72AF3A57500645BED /* Tarea.swift in Sources */,
 				2CEF7CF62AF3AD0800645BED /* ObtenerTareas.swift in Sources */,
 			);
